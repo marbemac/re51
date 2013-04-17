@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title Re51 Labs
+    meta name="keywords" content=""
+
+    link rel="stylesheet" href="/stylesheets/foundation.css"
+
+    <!--[if lt IE 9]>
+    link rel="stylesheet" href="/stylesheets/foundation-ie8-grid.css"
+    <![endif]-->
+
+    link rel="stylesheet" href="/stylesheets/font-awesome.css"
+    link rel="stylesheet" href="/stylesheets/reset.css"
+    link rel="stylesheet" href="/stylesheets/app.css"
+    script src='/javascripts/html5shiv.js'
+
+  body id=""
+    #wrapper
+      #header
+        .inner
+          .logo LOGO
+          #main-nav
+            a href="/about" About Us
+            a href="/disciplines" Disciplines
+            a href="/portfolio" Portfolio
+            a href="/contact" Contact Us
+      #main-content
+        .inner
+          == yield
+      #footer
+        .inner
+          .pull-left.foot-text &copy; Re:51 Labs
+          a.greenings.pull-right href="http://greeningsinternational.com/"
+            img src="/images/greenings_small.jpg"
+            .foot-text An affiliate of Greenings International
+
+    script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+    script src='/javascripts/app.js'

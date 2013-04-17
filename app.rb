@@ -21,3 +21,19 @@ end
 get '/' do
   slim :home
 end
+
+get '/about' do
+  slim :about
+end
+
+get '/disciplines' do
+  slim :disciplines
+end
+
+get '/portfolio' do
+  slim :portfolio
+end
+
+get '/contact' do
+  slim :contact
+end

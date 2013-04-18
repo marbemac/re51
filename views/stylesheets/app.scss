@@ -209,7 +209,30 @@ body {
 .portfolio {
   .item {
     position: relative;
-    padding: 0 0 0 125px;
+    padding: 0 0 0 155px;
+
+    &.netspend,
+    &.perkstreet {
+      img {
+        top: 10px;
+      }
+    }
+    &.tiger {
+      img {
+        top: 5px;
+      }
+    }
+    &.dean,
+    &.appinions {
+      img {
+        top: 19px;
+      }
+    }
+    &.waspit {
+      img {
+        top: 15px;
+      }
+    }
   }
 
   .url {
@@ -218,9 +241,13 @@ body {
   }
   img {
     position: absolute;
-    width: 100px;
+    width: 125px;
     left: 0;
     top: 0;
+
+    &.horizontal {
+      top: 10px;
+    }
   }
 }
 

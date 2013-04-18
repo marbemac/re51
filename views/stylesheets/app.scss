@@ -82,6 +82,10 @@ body {
   text-align: left;
   .inner {
     padding: 10px 15px 50px 15px;
+
+    p {
+      text-align: justify;
+    }
   }
 }
 
@@ -115,6 +119,9 @@ body {
   }
   .inner {
     width: auto;
+    p {
+      text-align: left;
+    }
   }
   #header {
     position: absolute;
@@ -146,15 +153,55 @@ body {
     padding: 30px;
     background: #F0F0E1;
     background: rgba(240, 240, 225, 0.5);
+    line-height: 46px;
+  }
+}
 
-    .icon-quote-left {
-      margin: 0 15px 15px 0;
-      display: inline-block;
+.team {
+  overflow: hidden;
+
+  .member {
+    margin: 0 0 50px 0;
+    padding: 0 0 0 130px;
+    position: relative;
+
+    img {
+      width: 110px;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
-    .icon-quote-right {
-      margin: 15px 0 0 15px;
-      display: inline-block;
+    .name {
+      font-weight: bold;
+    }
+
+    .title {
+      font-size: 16px;
+      font-style: italic;
+      margin: -4px 0 0 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 21px;
+      margin: 15px 0;
+    }
+
+    .social {
+      a {
+        font-size: 16px;
+        margin-right: 20px;
+
+        i {
+          font-size: 12px;
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+
+    &.last {
+      margin-bottom: 0;
     }
   }
 }

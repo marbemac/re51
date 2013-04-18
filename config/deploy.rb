@@ -4,7 +4,7 @@ default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
 set :rack_env, "production"
-set :domain, 'IP'
+set :domain, '198.211.110.136'
 set :application, 're51'
 set :repository,  'https://github.com/marbemac/re51.git'
 set :branch,  'master'
@@ -28,11 +28,11 @@ set :bundle_without, [:development, :test]
 set :rake, "#{rake} --trace"
 
 set :default_environment, {
-    'PATH' => "/usr/local/rvm/gems/ruby-1.9.3-p392/bin:/usr/local/rvm/gems/ruby-1.9.3-p392@global/bin:/usr/local/rvm/rubies/ruby-1.9.3-p392/bin:/usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games",
+    'PATH' => "usr/local/rvm/gems/ruby-1.9.3-p392@re51/bin:/usr/local/rvm/gems/ruby-1.9.3-p392@global/bin:/usr/local/rvm/rubies/ruby-1.9.3-p392/bin:/usr/local/rvm/bin:/root/.rbenv/shims:/root/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games",
     'RUBY_VERSION' => 'ruby 1.9.3',
-    'GEM_HOME'     => '/usr/local/rvm/gems/ruby-1.9.3-p392@marbemac',
-    'GEM_PATH'     => '/usr/local/rvm/gems/ruby-1.9.3-p392:/usr/local/rvm/gems/ruby-1.9.3-p392@global:/usr/local/rvm/gems/ruby-1.9.3-p392@marbemac',
-    'BUNDLE_PATH'  => '/usr/local/rvm/gems/ruby-1.9.3-p392@marbemac'  # If you are using bundler.
+    'GEM_HOME'     => '/usr/local/rvm/gems/ruby-1.9.3-p392@re51',
+    'GEM_PATH'     => '/usr/local/rvm/gems/ruby-1.9.3-p392@re51:/usr/local/rvm/gems/ruby-1.9.3-p392@global',
+    'BUNDLE_PATH'  => '/usr/local/rvm/gems/ruby-1.9.3-p392@re51'  # If you are using bundler.
 }
 
 after 'deploy:setup' do

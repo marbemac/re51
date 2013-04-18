@@ -19,21 +19,26 @@ get '/stylesheets/:name.css' do
 end
 
 get '/' do
+  @page = 'home'
   slim :home
 end
 
 get '/about' do
+  @page = 'about'
   slim :about
 end
 
 get '/disciplines' do
+  @page = 'disciplines'
   slim :disciplines
 end
 
 get '/portfolio' do
+  @page = 'portfolio'
   slim :portfolio
 end
 
 get '/contact' do
+  @page = 'contact'
   slim :contact
 end

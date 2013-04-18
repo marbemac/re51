@@ -206,4 +206,22 @@ body {
   }
 }
 
+.portfolio {
+  .item {
+    position: relative;
+    padding: 0 0 0 125px;
+  }
+
+  .url {
+    font-style: italic;
+    margin: -22px 0 15px 0;
+  }
+  img {
+    position: absolute;
+    width: 100px;
+    left: 0;
+    top: 0;
+  }
+}
+
 @import 'media_queries.css.scss';
